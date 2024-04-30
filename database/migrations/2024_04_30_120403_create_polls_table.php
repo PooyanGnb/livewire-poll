@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('polls', function (Blueprint $table) {
             $table->id();
+
+            $table->string('title');
+
             $table->timestamps();
         });
     }
