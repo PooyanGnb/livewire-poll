@@ -7,6 +7,10 @@ use Livewire\Component;
 
 class Polls extends Component
 {
+    protected $listeners = [
+        'poll-created' => 'render'
+    ];
+    
     public function render()
     {
         // this is equivalent to title and options in creatPolls.php
